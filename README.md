@@ -6,7 +6,7 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/nem1sha/QA-python
+git clone https://github.com/nem1sha/QA-python.git
 cd <ИМЯ_ПАПКИ_ПРОЕКТА>
 ```
 
