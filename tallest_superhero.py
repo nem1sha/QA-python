@@ -1,5 +1,6 @@
 import requests
 
+API_URL = "https://akabab.github.io/superhero-api/api/all.json"
 
 def get_heroes(url):
     response = requests.get(url)
@@ -49,8 +50,7 @@ def get_filter_heroes(heroes: list, gender: str, has_work: bool):
 
 
 def get_tallest_hero(gender: str, has_work: bool):
-    url = "https://akabab.github.io/superhero-api/api/all.json"
-    heroes = get_heroes(url)
+    heroes = get_heroes(API_URL)
 
     suitable_heroes = get_filter_heroes(heroes, gender, has_work)
 
